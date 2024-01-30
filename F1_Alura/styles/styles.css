@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #22D4FD;
+    --cor-terciaria: #F6F6F6;
+    --cor-hover: #272727;
+
+    --fonte-primaria: Krona One;
+    --fonte-secundaria: Montserrat;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -8,8 +18,8 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
 }
 
 .cabecalho {
@@ -23,8 +33,8 @@ body {
 }
 
 .cabecalho__menu__link {
-    color: var(--Azul-claro, #22D4FD);
-    font-family: Montserrat;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -34,7 +44,7 @@ body {
 }
 
 .titulo-destaque {
-    color: #22D4FD
+    color: var(--cor-secundaria);
 }
 
 .container {
@@ -55,7 +65,7 @@ body {
 
 .container_conteudo_titulo {
 
-    font-family: Krona One;
+    font-family: var(--fonte-primaria);
     font-size: 36px;
     font-weight: 400;
     line-height: 56px;
@@ -64,7 +74,7 @@ body {
 }
 
 .container_conteudo_texto {
-    font-family: 'Montserrat', serif;
+    font-family: var(--fonte-secundaria), serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
@@ -83,7 +93,7 @@ body {
 
 
 .titulo_apresentacao_links {
-    font-family: "Krona One";
+    font-family: var(--fonte-primaria);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -98,13 +108,13 @@ body {
     font-size: 24px;
     padding: 21.5px 0px;
     border-radius: 8px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-secundaria);
 
 
     /*FONTE*/
     color: #F6F6F6;
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -114,20 +124,20 @@ body {
 .apresentacao_links_link:hover {
 
     border-radius: 8px;
-    border: 2px solid #22D4FD;
-    background: #272727;
+    border: 2px solid var(--cor-secundaria);
+    background: var(--cor-hover);
     width: 300px;
 }
 
 .rodape {
     padding: 24px;
-    background: #22D4FD;
+    background: var(--cor-secundaria);
     height: 50px;
-    color: #000;
+    color: var(--cor-primaria);
 
 
     text-align: center;
-    font-family: Montserrat;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
