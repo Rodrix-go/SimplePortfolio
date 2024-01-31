@@ -35,7 +35,7 @@ body {
 .cabecalho__menu__link {
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -52,11 +52,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 
 }
 
 .container_conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -66,7 +67,7 @@ body {
 .container_conteudo_titulo {
 
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 56px;
     letter-spacing: 0em;
@@ -75,7 +76,7 @@ body {
 
 .container_conteudo_texto {
     font-family: var(--fonte-secundaria), serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0em;
@@ -94,34 +95,34 @@ body {
 
 .titulo_apresentacao_links {
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
 }
 
-.apresentacao_links_link {
+.apresentacao_links_navegacao {
     /*BOTÃO*/
     display: flex;
     justify-content: space-evenly;
-    width: 280px;
-    font-size: 24px;
+    width: 50%;
+    font-size: 1.5rem;
     padding: 21.5px 0px;
     border-radius: 8px;
     border: 2px solid var(--cor-secundaria);
 
 
     /*FONTE*/
-    color: #F6F6F6;
+    color: var(--cor-terciaria);
     text-decoration: none;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
 }
 
-.apresentacao_links_link:hover {
+.apresentacao_links_navegacao:hover {
 
     border-radius: 8px;
     border: 2px solid var(--cor-secundaria);
@@ -138,6 +139,37 @@ body {
 
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+
+@media (max-width: 1200px) {
+
+    .container {
+        padding: 5% 15%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container_conteudo {
+        width: auto;
+    }
+
+    .cabecalho {
+
+        padding: 7%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .container {
+        padding: 5% 5%;
+    }
 }
