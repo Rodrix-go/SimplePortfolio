@@ -1,4 +1,4 @@
-# Portfólio Olá, Bem vindo ao meu projeto de portfólio
+# Olá, Bem vindo ao meu projeto de estudo de portfólio
 
 ![image](imgs/bg.png)
 
